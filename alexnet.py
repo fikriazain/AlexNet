@@ -66,3 +66,6 @@ class AlexNet(object):
         model.add(Dense(self.num_classes))
         model.add(Activation('softmax'))
 
+        return model
+
+model = AlexNet(2, (224, 224, 3)).model()
